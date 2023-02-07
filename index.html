@@ -3,100 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <title>Danis CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="myphoto.jpeg" alt="Danis Islamov" width="200" />
-        </td>
-        <td>
-          <h1>Данис Исламов</h1>
-          <p>
-            <em
-              ><strong>Разработчик, блогер,</strong> видеомонтажер,
-              звукорежиссер
-            </em>
-          </p>
-          <p>Люблю программировать, создавать контент и ездить на мото</p>
-        </td>
-      </tr>
-    </table>
+    <div class="container">
+      <div class="info">
+        <img src="myphoto.jpeg" alt="Danis Islamov" class="avatar" />
 
-    <hr />
+        <div class="info-text">
+        <h1>Данис Исламов</h1>
+        <p>
+          <strong>Разработчик, блогер,</strong> видеомонтажер, звукорежиссер
+        </p>
+        <p>Люблю программировать, создавать контент и ездить на мото</p>
+        <h4>Мои социальные сети</h4>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
         <a href="https://vk.com/radionis" target="_blank">VKontakte</a>
-      </li>
-      <li>
+        |
         <a target="_blank" href="https://t.me/danis_pro_zarabotok">Telegram</a>
-      </li>
-    </ul>
+      </div>
 
-    <hr />
+    </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Мотоциклы</li>
-      <li>Блогерство</li>
-      <li>Спорт</li>
-    </ol>
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Мотоциклы</li>
+          <li>Блогерство</li>
+          <li>Спорт</li>
+        </ol>
+      </div>
 
-    <hr />
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>YouTube</td>
+            <td>Blogger</td>
+            <td>Since 2015</td>
+          </tr>
+          <tr>
+            <td>Circus</td>
+            <td>Sound Engineer</td>
+            <td>2014 - 2022</td>
+          </tr>
+        </table>
+      </div>
 
-    <h2>Опыт работы</h2>
-    <table border="2">
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>YouTube</td>
-        <td>Blogger</td>
-        <td>Since 2015</td>
-      </tr>
-      <tr>
-        <td>Circus</td>
-        <td>Sound Engineer</td>
-        <td>2014 - 2022</td>
-      </tr>
-    </table>
+      <div class="card bg-red">
+        <h2>Примеры работ</h2>
+        <ul class="link-list">
+          <li>
+            <a target="_blank" href="https://youtu.be/GkmVNtLWB70"
+              >Симфония «Ведьмак»</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://youtu.be/Non0bQb9tJM"
+              >fifine k651 полный обзор</a
+            >
+          </li>
+        </ul>
+      </div>
 
-    <hr />
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя..." />
+            </div>
 
-    <h2>Примеры работ</h2>
-    <a target="_blank" href="video-works.html">посмотреть работы</a>
+            <div class="form-group">
+              <label for="email">Ваш Email:</label>
+              <input type="email" id="email" placeholder="Введите email..." />
+            </div>
+          </div>
 
-    <hr />
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <br />
+            <textarea
+              id="text"
+              cols="15"
+              rows="2"
+              placeholder="Введите сообщение..."
+            ></textarea>
+          </div>
 
-    <h2>Связаться со мной</h2>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя..." />
+          <input class="btn" type="submit" value="Связаться!" />
+        </form>
+      </div>
+      <div class="position">
+  
+        <div class="box"></div>
+      </div>
+      <div style="margin-bottom: 500px"></div>
+    </div>
 
-      <br />
 
-      <label for="email">Ваш Email:</label>
-      <input type="email" id="email" placeholder="Введите email..." />
 
-      <br />
-
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea
-        id="text"
-        cols="15"
-        rows="2"
-        placeholder="Введите сообщение..."
-      ></textarea>
-      <br />
-
-      <input type="submit" value="Связаться!" />
-    </form>
-
-    <hr />
   </body>
 </html>
